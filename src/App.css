@@ -1,0 +1,90 @@
+*{
+  background-color: black;
+}
+.in{
+  background-color: rgb(9, 9, 127);
+display: flex;
+color: white;
+width: 10%;
+height: 4vh;
+justify-content: center;
+padding: 3px;
+font-size: 18px;
+font-weight: bold;
+display: flex;
+  cursor: pointer;
+  box-shadow: 0 0 10px 10px rgba(223, 178, 42, 0.899);
+      border: solid 3px transparent;
+      transition: border-color 0.5s ease-in-out;
+}
+.in:hover {
+  animation: border-flicker 0.5s infinite;
+}
+.de{
+    background-color: rgb(9, 9, 127);
+      color: white;
+      margin-left: 35px;
+      width: 10%;
+        height: 4vh;
+        justify-content: center;
+        padding: 3px;
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        cursor: pointer;
+      box-shadow: 0 0 10px 10px rgba(42, 223, 45, 0.899);
+          border: solid 3px transparent;
+            transition: border-color 0.5s ease-in-out;
+}
+.de:hover {
+  animation: border-flicker 0.5s infinite;
+}
+
+@keyframes border-flicker {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+.useff{
+  color: white;
+  font-size: 45px;
+  border-bottom: 2px solid white;
+}
+.count{
+  color: white;
+  font-size: 45px;
+  margin: 40px;
+}
+.c{
+  margin-top: 10%;
+  text-align: center;
+}
+  .d{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+  }
+@media screen and (max-width: 600px) {
+  .in {
+    font-size: 18px;
+    width: 20%;
+    height: 4vh;
+    font-weight: bolder;
+  }
+}
+@media screen and (max-width: 600px) {
+  .de {
+    font-size: 18px;
+    width: 20%;
+    height: 4vh;
+    font-weight: bolder;
+  }
+}
